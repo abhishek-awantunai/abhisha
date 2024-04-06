@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            background: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        #container:hover {
+            /* animation: sample_animation 10s; */
+            animation-name: sample_animation;
+            animation-duration: 10s;
+        }
+
+        @keyframes sample_animation {
+            0% {background-color:red; width:150px; height:150px;}
+            25% {background-color:yellow; width:200px; height:200px;}
+            50% {background-color:blue; width:250px; height:250px;}
+            75% {background-color:green; width:300px; height:300px;}
+            100% {background-color:red; width:350px; height:350px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
