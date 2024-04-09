@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tac+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tac+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Barlow", sans-serif;
+        }
+        #container{
+            padding: 100px 240px;
+        }
+        header{
+            text-align: center;
+        }
+        header span{
+            text-decoration: underline;
+            padding: 0px 0px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+        section h1{
+            font-family: "Barlow", sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            text-align: center;
+            margin: 30px 0px;
+        }
+        section#row_two{
+            padding: 20px 0px;
+        }
+        section#row_two p{
+            text-align: center;
+            font-size: 14px;
+        }
+        #third_row{
+            border-top: 1px solid black;
+            padding: 20px 0px;
+            overflow: hidden;
+        }
+        #third_row #left_section, #third_row #right_section{
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+        }
+        #third_row #left_section{
+            padding-right: 15px;
+        }
+        #third_row #right_section{
+            padding-left: 15px;
+        }
+        #third_row h3{
+            padding-bottom: 15px;
+        }
+        .pad-t-15{
+            padding-top: 30px;
+        }
+        #input_section {
+            padding: 25px 10px;
+        }
+        #input_section #left{
+            width: 15%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #input_section #left input{
+            width: 100%;
+            height: 30px;
+        }
+        #input_section #center{
+            width: 35%;
+            float: left;
+        }
+        #input_section #right{
+            width: 50%;
+            float: left;
+        }
+        #input_section #right button {
+            margin: 15px;
+            padding: 5px 15px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        #fourth_row{
+            padding: 15px 0px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #fifth_row{
+            padding: 15px 0px;
+        }
+        #fifth_row p{
+            margin: 15px 0px;
+        }
+        #fifth_row img{
+            width: 200px;
+        }
+
+        /*
+        This below written code is scss - a pre processor for css
+
+        $color: orange;
+
+        #fifth_row
+            padding: 15px 0px;
+            background: $color;
+            p
+                margin: 15px 0px;
+                background: $color;
+                a
+                    width: 200px;
+                    background: $color;
+            img
+                width: 200px;
+                background: $color;
+
+        */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+            <span>sample link</span>
+        </header>
+        <section id="row_two">
+            <h1>
+                Lorem Ipsum
+            </h1>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+            <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+        </section>
+        <section id="third_row">
+            <div id="left_section">
+                <div>
+                    <h3>
+                        What is Lorem Ipsum?
+                    </h3>
+                    <p>
+                        <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="pad-t-15">
+                        Where does it come from?
+                    </h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
+                    <p>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+                </div>
+            </div>
+            <div id="right_section">
+                <div>
+                    <h3>
+                        Why do we use it?
+                    </h3>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                </div>
+                <div>
+                    <h3 class="pad-t-15">Where can I get some?</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                    <div id="input_section">
+                        <div id="left">
+                            <input type="number" value="5" />
+                        </div>
+                        <div id="center">
+                            <div>
+                                <input id="paragraph" type="radio" name="paragraph" />
+                                <span for="paragraph">paragraph</span>
+                            </div>
+                            <div>
+                                <input id="words" type="radio" name="words" />
+                                <span for="words">words</span>
+                            </div>
+                            <div>
+                                <input id="bytes" type="radio" name="bytes" />
+                                <span for="bytes">bytes</span>
+                            </div>
+                            <div>
+                                <input id="lists" type="radio" name="lists" />
+                                <span for="lists">lists</span>
+                            </div>
+                        </div>
+                        <div id="right">
+                            <input type="checkbox" value="true" name="agree" />
+                            <span>Start with 'Lorem ipsum dolor sit amet...'</span>
+                            <div>
+                                <button>Generate Lorum Ipsum</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fourth_row" class="text-center">
+            <p>Translations: Can you help translate this site into a foreign language ? Please email us with details if you can h</p>
+        </section>
+        <section id="fifth_row" class="text-center">
+            <p>
+                There is a set of mock banners available here in three colours and in a range of standard banner sizes:
+            </p>
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+        </section>
+        <section>
+            <p>
+                Donate: If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum is appreciated - click here to donate using PayPal. Thank you for your support.
+            </p>
+            <p>
+                Donate Bitcoin: 16UQLq1HZ3CNwhvgrarV6pMoA2CDjb4tyF
+            </p>
+        </section>
+        <section>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+            <span>Nodejs</span>
+        </section>
+        <section>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </section>
+        <footer>
+            <p>help@lipsum.com</p>
+            <p>Privacy Policy·</p>
+        </footer>
+    </div>
+</body>
+
+</html>
