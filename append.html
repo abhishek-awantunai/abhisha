@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .bg-image {
+            position: absolute;
+            top: -50px;
+            left: 0px;
+            width: 99.98vw;
+            height: 110vh;
+            z-index: -1;
+            filter: brightness(65%);
+        }
+
+        header {
+            padding: 30px 5px;
+        }
+
+        header .logo_name {
+            font-weight: 600;
+            color: white;
+            font-size: 24px;
+        }
+
+        header .dot {
+            background: #e84545;
+            height: 5px;
+            width: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        header a {
+            color: rgb(222, 222, 222);
+            font-size: 16px;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+
+        header a.active {
+            color: white;
+        }
+
+        header .dropdown button,
+        header .dropdown button:hover {
+            background: transparent;
+            color: rgb(222, 222, 222);
+            border: 0px;
+        }
+
+        header .btn-red,
+        header .btn-red:hover {
+            background: #e84545;
+            color: white;
+            font-size: 14px;
+        }
+
+        .welcome-section {
+            padding: 250px 0px 0px 70px;
+        }
+
+        .welcome-section h1 {
+            color: white;
+            font-size: 44px;
+            font-weight: 700;
+        }
+
+        .welcome-section p {
+            color: white;
+        }
+
+        .welcome-section input {
+            padding: 15px 20px;
+            width: 80%;
+            border-radius: 5px;
+            outline: 0px;
+            border: 0px;
+        }
+
+        .welcome-section .sign-up-btn {
+            background: #e84545;
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            top: 8px;
+            right: 140px;
+        }
+
+        .btn-container {
+            position: relative;
+        }
+
+        .section_one {
+            height: 110vh;
+        }
+
+        .section_two {
+            padding-top: 0px;
+            padding-bottom: 30px;
+        }
+
+        .section_two img {
+            width: 100px;
+            filter: grayscale(100%);
+            cursor: pointer;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .section_two img:hover {
+            filter: grayscale(0%);
+        }
+
+        .bg-grey {
+            background: #f4f4f4;
+        }
+
+        .bg-red {
+            /* background: red; */
+            padding: 30px 0px;
+        }
+
+        .bg-orange {
+            /* background: orange; */
+            padding: 30px 0px;
+        }
+
+        .bg-green {
+            /* background: green; */
+            padding: 30px 0px;
+        }
+
+        .bg-yellow {
+            /* background: yellow; */
+            padding: 30px 0px;
+        }
+        .pad-tb-100{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .pad-l-50{
+            padding-left: 50px;
+        }
+        .section_three img{
+            max-width: 100px;
+            border-radius: 50%;
+        }
+        .section_three .about_us_btn{
+            background: rgba(232, 69, 69, 0.05);
+            color: #e84545;
+            border: 0px;
+            outline: 0px;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-size: 16px;
+        }
+        .section_three h3{
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        .section_three p{
+            font-size: 15px;
+        }
+        .section_three .red_btn{
+            background:  #e84545;
+            color: white;
+            border: 0px;
+            outline: 0px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .section_three .card{
+            padding: 30px;
+            width: 90%;
+        }
+        .section_three .card h5{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .section_three .bg-red .card, .section_three .bg-yellow .card{
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+        .section_three .bg-orange .card, .section_three .bg-green .card{
+            position: relative;
+            top: -20px;
+        }
+        .section_four{
+            position: relative;
+            padding: 100px 30px;
+
+        }
+        .section_four .gray-overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            filter: brightness(40%);
+            z-index: -1;
+        }
+        .section_four h3, .section_four p{
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+        .section_four h3{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .section_five{
+            padding: 60px 0px;
+        }
+        .section_five h1, .section_five p{
+            text-align: center;
+        }
+        .section_five h1{
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .section_five h1 span{
+            display: inline-block;
+            height: 2px;
+            width: 50px;
+            margin: 0px 15px;
+            background: #e84545;
+            position: relative;
+            top: -8px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid section_one">
+        <header class="row">
+            <div class="col-md-2">
+                <span class="logo_name">Append</span>
+                <span class="dot"></span>
+            </div>
+            <div class="col-md-7">
+                <a class="active" href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Services</a>
+                <a href="/">Portfolio</a>
+                <a href="/">Team</a>
+                <a href="/">Blog</a>
+                <span class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </span>
+                <a href="/">Contact</a>
+            </div>
+            <div class="col-md-3 text-end">
+                <button class="btn btn-red">Get Started</button>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-6 welcome-section">
+                <h1>Welcome to Our Website</h1>
+                <p>We are team of talented designers making websites with Bootstrap</p>
+                <div class="btn-container">
+                    <input type="text" placeholder="Enter email address" />
+                    <button class="btn sign-up-btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <img class="bg-image" src="https://bootstrapmade.com/demo/templates/Append/assets/img/hero-bg.jpg" />
+    </div>
+    <div class="container section_two">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+            <div class="col-md-2">
+                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/clients/client-1.png" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-grey section_three">
+        <div class="row">
+            <div class="col-md-4 pad-tb-100 pad-l-50">
+                <button class="about_us_btn">About Us</button>
+                <h3>Ducimus rerum libero reprehenderit cumque</h3>
+                <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis
+                    minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt
+                    voluptatem tempora deleniti soluta.</p>
+                <button class="red_btn">
+                    Read more
+                    <!-- <i class="fa fa-arrow-right"></i> -->
+                </button>
+            </div>
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 bg-red">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://i.pinimg.com/736x/df/7d/73/df7d73c62bd82efdaf5e732c1ed1c255.jpg" />
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.With supporting text below as a natural lead-in to additional
+                                        content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 bg-orange">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://i.pinimg.com/736x/df/7d/73/df7d73c62bd82efdaf5e732c1ed1c255.jpg" />
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.With supporting text below as a natural lead-in to additional
+                                        content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 bg-yellow">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://i.pinimg.com/736x/df/7d/73/df7d73c62bd82efdaf5e732c1ed1c255.jpg" />
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 bg-green">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://i.pinimg.com/736x/df/7d/73/df7d73c62bd82efdaf5e732c1ed1c255.jpg" />
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section_four">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>232</h3>
+                <p>clients</p>
+            </div>
+            <div class="col-md-3">
+                <h3>232</h3>
+                <p>clients</p>
+            </div>
+            <div class="col-md-3">
+                <h3>232</h3>
+                <p>clients</p>
+            </div>
+            <div class="col-md-3">
+                <h3>232</h3>
+                <p>clients</p>
+            </div>
+        </div>
+        <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/stats-bg.jpg" class="gray-overlay" />
+    </div>
+    <div class="container-fluid section_five">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><span></span>Services<span></span></h1>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
