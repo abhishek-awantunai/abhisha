@@ -131,8 +131,13 @@ const numArr = [1,2,33,21,221];
 const arr = ['Abhishek', 'Amisha', 'Ayushi', 'Priyanka', 'Nikki','Abhishek', 'Amisha', 'Ayushi', 'Priyanka', 'Nikki','Abhishek', 'Amisha', 'Ayushi', 'Priyanka', 'Nikki','Abhishek', 'Amisha', 'Ayushi', 'Priyanka', 'Nikki'];
 
 for(let i=0;i < arr.length;i++){
-    console.log(arr[i]);
+    // console.log(arr[i]);
 }
+
+
+
+
+
 
 
 
@@ -170,4 +175,252 @@ for(let i=0;i < arr.length;i++){
  * 
  */
 
+
+
+
+
+// Function declarations
+function anyNameOfFunction(number1, number2){
+    console.log(number1*number2);
+}
+
+
+
+// Function call
+// anyNameOfFunction(23, 32);
+
+
+
+
+// const obj ={
+//     name: 'amisha',
+//     printMyAge: function(age){
+//         console.log(age);
+//     }
+// }
+
+// console.log(obj.printMyAge(33))
+
+
+
+
+
+/**
+ * 
+ * DAY : 3
+ * 
+ * OPERATORS
+ * 
+ */
+
+
+// Arithmetic Operators
+/**
+ * 
+ * Arithmetic Operators on Numbers
+ * 
+ */
+
+
+const variable1 = 5
+const variable2 = 15
+
+
+// Addition
+// console.log(variable1 + variable2);
+
+// Subtraction
+// console.log(variable1 - variable2);
+
+// Multiplication
+// console.log(variable1*variable2);
+
+// Division
+// console.log(variable2/variable1);
+
+
+/**
+ * 
+ * Arithmetic Operators on Strings
+ * 
+ */
+
+const stringVariable1 = 'a5abcd'; // NaN
+const stringVariable2 = '1'; // 1 
+
+
+// console.log(stringVariable1+stringVariable2);  //  --> a5abcd1
+// console.log(stringVariable1-stringVariable2);  //  --> NaN
+// console.log(stringVariable1*stringVariable2);  //  --> NaN
+// console.log(stringVariable1/stringVariable2);  //  --> NaN
+
+
+/**
+ * 
+ * Arithmetic Operators on Boolean
+ * 
+ */
+
+const booleanVariable1 = false; // 0
+const booleanVariable2 = true; // 1
+
+// console.log(booleanVariable1+booleanVariable2);  //  --> 1
+// console.log(booleanVariable1-booleanVariable2);  //  --> -1
+// console.log(booleanVariable1*booleanVariable2);  //  --> 0
+// console.log(booleanVariable1/booleanVariable2);  //  --> 0
+
+const num1 = 22;
+const num2 = 5;
+const num3 = 2;
+
+/**
+ * 
+ * Modulus Operators [ % ]
+ */ 
+// console.log(num1%num2); // --> 2
+// console.log(num1%num3); // --> 0
+
+/**
+ * 
+ * Exponential Operators [ ** ] 
+ */ 
+// console.log(5**10)
+
+/**
+ * 
+ * Increment Operators [ ** ] 
+ */ 
+let amishaGhnonchu = 10;
+amishaGhnonchu = amishaGhnonchu + 6;   // 16
+amishaGhnonchu--;   // 15
+amishaGhnonchu++;   // 16
+amishaGhnonchu++;   // 17
+amishaGhnonchu++;   // 18
+amishaGhnonchu++;   // 19
+amishaGhnonchu--;   // 18
+amishaGhnonchu--;   // 17
+amishaGhnonchu--;   // 16
+amishaGhnonchu--;   // 15
+
+// console.log(amishaGhnonchu) // 15
+
+
+// Assignment Operators
+const homeTown = 'jamshedpur';
+
+let compoundNum = 7;
+
+// Simple Assignment Operator
+compoundNum = compoundNum + 1;
+// Compound Assignment Operator
+compoundNum++;
+
+// Simple Assignment Operator
+compoundNum = compoundNum + 6;
+// Compound Assignment Operator
+compoundNum += 6;
+
+// Simple Assignment Operator
+compoundNum = compoundNum - 1;
+// Compound Assignment Operator
+compoundNum--;
+
+// Simple Assignment Operator
+compoundNum = compoundNum - 6;
+// Compound Assignment Operator
+compoundNum -= 6;
+
+// Simple Assignment Operator
+compoundNum = compoundNum * 6;
+// Compound Assignment Operator
+compoundNum *= 6;
+
+// Simple Assignment Operator
+compoundNum = compoundNum / 6;
+// Compound Assignment Operator
+compoundNum /= 6;
+
+
+/**
+ * 
+ * Comparison Operators
+ * >, <, >=, <=, ==, ===, !=, !==
+ * 
+ */
+
+const fruit = 20;
+const vegetables = 12;
+
+if (vegetables > fruit){
+    // console.log('vegetables khatam karenge');
+} else {
+    // console.log('fruit khatam karenge');
+}
+
+const amishaAge = 28; // value = 28, type = number
+const priyankaAge = '28'; // value = 28, type = string
+const abhishekAge = 32; // value = 28, type = string
+const nikkiAge = 12; // value = 28, type = string
+
+if (nikkiAge <= amishaAge && nikkiAge <= 15) {
+    // console.log('Nikki is a teenager');
+}
+
+// console.log(amishaAge == priyankaAge); // true
+// console.log(amishaAge === priyankaAge); // false
+
+// console.log(amishaAge != priyankaAge); // false
+// console.log( abhishekAge != priyankaAge); // true
+
+// console.log(amishaAge !== priyankaAge); // true
+// console.log( abhishekAge !== priyankaAge); // true
+
+/**
+ * 
+ * Logical Operator
+ * 
+ * AND Operator
+ * comparision && comparision
+ * true && true => true
+ * true && false => false
+ * false && true => false
+ * false && false => false
+ * 
+ * 
+ * OR Operator
+ * comparision || comparision
+ * true || true => true
+ * true || false => true
+ * false || true => true
+ * false || false => false
+ * 
+ */
+
+
+/**
+ * 
+ * if(comparision){ // true / false
+ * 
+ * } else {
+ * 
+ * }
+ * 
+ */
+
+
+const isTerrorist = true;
+
+console.log(!!!isTerrorist)
+
+if(isTerrorist) {
+    console.log('Terrorist');
+} else {
+    console.log('Hero');
+}
+
+// Ternary Operator
+isTerrorist ? console.log('Terrorist') : console.log('Hero');
+
+
+if (!(amishaAge > nikkiAge)) {}
 
